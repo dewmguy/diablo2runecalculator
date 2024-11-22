@@ -20,6 +20,8 @@ Runewords can be sorted numerically or alphabetically ascending or descending.
 
 Runewords can be filtered by Ladder or Non-ladder, patch version, or item type.
 
+## Other Tools
+
 ### Rune Cube Formulas
 
 Make a selection of a rune in the panel to output its purpose in the Horadric Cube conversion process, either converting to or from a given rune.
