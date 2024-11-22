@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+<title>Diablo 2 Rune Calculator</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="A simple and powerful runeword calculator for Diablo 2." />
+<link type="text/css" href="/system/css/stylesheet.css" rel="stylesheet" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="system/js/script.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-60456908-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js",new Date());
+  gtag("config","UA-60456908-4");
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+  <h1>Diablo&nbsp;<span>2</span></h1>
+  <h2>Runeword Calculator</h2>
+
+</header>
+
+<form>
+
+  <section>
+    <h3>Filter by Runes</h3>
+  </section>
+  <section>
+    <div class="filter tcenter links">
+      Match: <span class="clicked" data-filter="any">Partial</span> <span data-filter="exact">Exact</span>
+    </div>
+    <div class="sort tcenter links">
+      Sort: <span class="clicked" data-sort="nA">1 - 9</span> <span data-sort="nD">9 - 1</span> <span data-sort="aA">A - Z</span> <span data-sort="aD">Z - A</span>
+    </div>
+    <div class="select tcenter links">
+      Select: <span class="clicked" data-select="none">None</span> <span data-select="all">All</span>
+    </div>
+  </section>
+  <section>
+    <div class="select tcenter links">
+      Normal: <span data-select="normal1">1</span> <span data-select="normal2">2</span> <span data-select="normal3">3</span> <span data-select="normal4">4</span> <span data-select="normal5">5</span>
+    </div>
+    <div class="select tcenter links">
+      Nightmare: <span data-select="nightmare1">1</span> <span data-select="nightmare2">2</span> <span data-select="nightmare3">3</span> <span data-select="nightmare4">4</span> <span data-select="nightmare5">5</span>
+    </div>
+    <div class="select tcenter links">
+      Hell: <span data-select="hell1">1</span> <span data-select="hell2">2</span> <span data-select="hell3">3</span> <span data-select="hell4">4</span> <span data-select="hell5">5</span>
+    </div>
+  </section>
+  <section>
+    <div class="select tcenter links">
+      Countess: <span data-select="count1">Normal</span> <span data-select="count2">Nightmare</span> <span data-select="count3">Hell</span>
+    </div>
+    <div class="select tcenter links">
+      Forge: <span data-select="forge1">Normal</span> <span data-select="forge2">Nightmare</span> <span data-select="forge3">Hell</span>
+    </div>
+  </section>
+
+  <section class="runes">
+    <div data-rune="01"><img data-rune="1" src="/runes/el.png" title="el" /><p>el</p></p></div>
+    <div data-rune="02"><img data-rune="2" src="/runes/eld.png" title="eld" /><p>eld</p></div>
+    <div data-rune="03"><img data-rune="3" src="/runes/tir.png" title="tir" /><p>tir</p></div>
+    <div data-rune="04"><img data-rune="4" src="/runes/nef.png" title="nef" /><p>nef</p></div>
+    <div data-rune="05"><img data-rune="5" src="/runes/eth.png" title="eth" /><p>eth</p></div>
+    <div data-rune="06"><img data-rune="6" src="/runes/ith.png" title="ith" /><p>ith</p></div>
+    <div data-rune="07"><img data-rune="7" src="/runes/tal.png" title="tal" /><p>tal</p></div>
+    <div data-rune="08"><img data-rune="8" src="/runes/ral.png" title="ral" /><p>ral</p></div>
+    <div data-rune="09"><img data-rune="9" src="/runes/ort.png" title="ort" /><p>ort</p></div>
+    <div data-rune="10"><img data-rune="10" src="/runes/thul.png" title="thul" /><p>thul</p></div>
+    <div data-rune="11"><img data-rune="11" src="/runes/amn.png" title="amn" /><p>amn</p></div>
+    <div data-rune="12"><img data-rune="12" src="/runes/sol.png" title="sol" /><p>sol</p></div>
+    <div data-rune="13"><img data-rune="13" src="/runes/shael.png" title="shael" /><p>shael</p></div>
+    <div data-rune="14"><img data-rune="14" src="/runes/dol.png" title="dol" /><p>dol</p></div>
+    <div data-rune="15"><img data-rune="15" src="/runes/hel.png" title="hel" /><p>hel</p></div>
+    <div data-rune="16"><img data-rune="16" src="/runes/io.png" title="io" /><p>io</p></div>
+    <div data-rune="17"><img data-rune="17" src="/runes/lum.png" title="lum" /><p>lum</p></div>
+    <div data-rune="18"><img data-rune="18" src="/runes/ko.png" title="ko" /><p>ko</p></div>
+    <div data-rune="19"><img data-rune="19" src="/runes/fal.png" title="fal" /><p>fal</p></div>
+    <div data-rune="20"><img data-rune="20" src="/runes/lem.png" title="lem" /><p>lem</p></div>
+    <div data-rune="21"><img data-rune="21" src="/runes/pul.png" title="pul" /><p>pul</p></div>
+    <div data-rune="22"><img data-rune="22" src="/runes/um.png" title="um" /><p>um</p></div>
+    <div data-rune="23"><img data-rune="23" src="/runes/mal.png" title="mal" /><p>mal</p></div>
+    <div data-rune="24"><img data-rune="24" src="/runes/ist.png" title="ist" /><p>ist</p></div>
+    <div data-rune="25"><img data-rune="25" src="/runes/gul.png" title="gul" /><p>gul</p></div>
+    <div data-rune="26"><img data-rune="26" src="/runes/vex.png" title="vex" /><p>vex</p></div>
+    <div data-rune="27"><img data-rune="27" src="/runes/ohm.png" title="ohm" /><p>ohm</p></div>
+    <div data-rune="28"><img data-rune="28" src="/runes/lo.png" title="lo" /><p>lo</p></div>
+    <div data-rune="29"><img data-rune="29" src="/runes/sur.png" title="sur" /><p>sur</p></div>
+    <div data-rune="30"><img data-rune="30" src="/runes/ber.png" title="ber" /><p>ber</p></div>
+    <div data-rune="31"><img data-rune="31" src="/runes/jah.png" title="jah" /><p>jah</p></div>
+    <div data-rune="32"><img data-rune="32" src="/runes/cham.png" title="cham" /><p>cham</p></div>
+    <div data-rune="33"><img data-rune="33" src="/runes/zod.png" title="zod" /><p>zod</p></div>
+  </section>
+
+  <section class="runewordmatch"></section>
+ 
+</form>
+
+<form>
+
+  <section>
+    <h3>Filter by Keywords</h3>
+  </section>
+
+  <section>
+    <div><input type="text" class="runewordsearch" placeholder="search by name" /></div>
+  </section>
+ 
+  <section>
+    <div class="fsort tcenter links">
+      Sort: <span class="clicked" data-fsort="aA">A - Z</span> <span data-fsort="aD">Z - A</span> <span data-fsort="levelA">1 - 9</span> <span data-fsort="levelD">9 - 1</span>
+    </div>
+    <div class="ladder tcenter links">
+      Season: <span data-season="nonladder">Non-Ladder</span> <span class="clicked" data-season="ladder">Ladder</span>
+    </div>
+    <div class="patch tcenter links">
+      Patch: <span data-patch="1.08">1.08</span> <span data-patch="1.10">1.10</span> <span data-patch="2.4">2.4</span> <span class="clicked" data-patch="2.6">2.6</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="type tcenter links">
+      Type: <span data-type="armor">armor</span> <span data-type="axes">axes</span> <span data-type="clubs">clubs</span> <span data-type="hammers">hammers</span> <span data-type="helms">helms</span> <span data-type="katars">katars</span> <span data-type="maces">maces</span> <span data-type="polearms">polearms</span> <span data-type="scepters">scepters</span> <span data-type="shields">shields (any)</span> <span data-type="paladin shields">shields (paladin)</span> <span data-type="staves">staves</span> <span data-type="swords">swords</span> <span data-type="wands">wands</span> <span data-type="weapons">weapons (any)</span> <span data-type="melee weapons">weapons (melee)</span> <span data-type="missile weapons">weapons (missiles)</span>
+    </div>
+  </section>
+
+  <section class="runewordresults"></section>
+ 
+</form>
+
+<form>
+
+  <section>
+    <h3>Rune Cube Formulas
+  </section>
+
+  <section class="runes2">
+    <div data-rune="01"><img data-rune="1" src="/runes/el.png" title="el" /><p>el</p></div>
+    <div data-rune="02"><img data-rune="2" src="/runes/eld.png" title="eld" /><p>eld</p></div>
+    <div data-rune="03"><img data-rune="3" src="/runes/tir.png" title="tir" /><p>tir</p></div>
+    <div data-rune="04"><img data-rune="4" src="/runes/nef.png" title="nef" /><p>nef</p></div>
+    <div data-rune="05"><img data-rune="5" src="/runes/eth.png" title="eth" /><p>eth</p></div>
+    <div data-rune="06"><img data-rune="6" src="/runes/ith.png" title="ith" /><p>ith</p></div>
+    <div data-rune="07"><img data-rune="7" src="/runes/tal.png" title="tal" /><p>tal</p></div>
+    <div data-rune="08"><img data-rune="8" src="/runes/ral.png" title="ral" /><p>ral</p></div>
+    <div data-rune="09"><img data-rune="9" src="/runes/ort.png" title="ort" /><p>ort</p></div>
+    <div data-rune="10"><img data-rune="10" src="/runes/thul.png" title="thul" /><p>thul</p></div>
+    <div data-rune="11"><img data-rune="11" src="/runes/amn.png" title="amn" /><p>amn</p></div>
+    <div data-rune="12"><img data-rune="12" src="/runes/sol.png" title="sol" /><p>sol</p></div>
+    <div data-rune="13"><img data-rune="13" src="/runes/shael.png" title="shael" /><p>shael</p></div>
+    <div data-rune="14"><img data-rune="14" src="/runes/dol.png" title="dol" /><p>dol</p></div>
+    <div data-rune="15"><img data-rune="15" src="/runes/hel.png" title="hel" /><p>hel</p></div>
+    <div data-rune="16"><img data-rune="16" src="/runes/io.png" title="io" /><p>io</p></div>
+    <div data-rune="17"><img data-rune="17" src="/runes/lum.png" title="lum" /><p>lum</p></div>
+    <div data-rune="18"><img data-rune="18" src="/runes/ko.png" title="ko" /><p>ko</p></div>
+    <div data-rune="19"><img data-rune="19" src="/runes/fal.png" title="fal" /><p>fal</p></div>
+    <div data-rune="20"><img data-rune="20" src="/runes/lem.png" title="lem" /><p>lem</p></div>
+    <div data-rune="21"><img data-rune="21" src="/runes/pul.png" title="pul" /><p>pul</p></div>
+    <div data-rune="22"><img data-rune="22" src="/runes/um.png" title="um" /><p>um</p></div>
+    <div data-rune="23"><img data-rune="23" src="/runes/mal.png" title="mal" /><p>mal</p></div>
+    <div data-rune="24"><img data-rune="24" src="/runes/ist.png" title="ist" /><p>ist</p></div>
+    <div data-rune="25"><img data-rune="25" src="/runes/gul.png" title="gul" /><p>gul</p></div>
+    <div data-rune="26"><img data-rune="26" src="/runes/vex.png" title="vex" /><p>vex</p></div>
+    <div data-rune="27"><img data-rune="27" src="/runes/ohm.png" title="ohm" /><p>ohm</p></div>
+    <div data-rune="28"><img data-rune="28" src="/runes/lo.png" title="lo" /><p>lo</p></div>
+    <div data-rune="29"><img data-rune="29" src="/runes/sur.png" title="sur" /><p>sur</p></div>
+    <div data-rune="30"><img data-rune="30" src="/runes/ber.png" title="ber" /><p>ber</p></div>
+    <div data-rune="31"><img data-rune="31" src="/runes/jah.png" title="jah" /><p>jah</p></div>
+    <div data-rune="32"><img data-rune="32" src="/runes/cham.png" title="cham" /><p>cham</p></div>
+    <div data-rune="33"><img data-rune="33" src="/runes/zod.png" title="zod" /><p>zod</p></div>
+  </section>
+
+  <section class="runewordupgrade tcenter"></section>
+
+</form>
+
+<form>
+
+  <section>
+    <h3>Cube Stat Gem Upgrades</h3>
+  </section>
+
+  <section class="statgems">
+    <div><input type="number" class="statgem" data-stat-gem="5" placeholder="0" min="0" /><img class="gemimg" title="Perfect" src="/gems/t-5.png" /></div>
+    <div><input type="number" class="statgem" data-stat-gem="4" placeholder="0" min="0" /><img class="gemimg" title="Flawless" src="/gems/t-4.png" /></div>
+    <div><input type="number" class="statgem" data-stat-gem="3" placeholder="0" min="0" /><img class="gemimg" title="Nomral" src="/gems/t-3.png" /></div>
+    <div><input type="number" class="statgem" data-stat-gem="2" placeholder="0" min="0" /><img class="gemimg" title="Flawed" src="/gems/t-2.png" /></div>
+    <div><input type="number" class="statgem" data-stat-gem="1" placeholder="0" min="0" /><img class="gemimg" title="Chipped" src="/gems/t-1.png" /></div>
+  </section>
+ 
+</form>
+
+<form>
+
+  <section>
+    <h3>Updates</h3>
+  </section>
+ 
+  <section>
+    <ul class="update">
+      <li class="new"><span class="date">November 17<sup>th</sup>, 2024</span><p>Added Rune Cube Formulas</p></li>
+      <li class="fix"><span class="date">November 16<sup>th</sup>, 2024</span><p>Added missing runewords for 2.4 and 2.6, corrected errors, and made code optimizations.</p></li>
+      <li class="fix"><span class="date">August 21<sup>st</sup>, 2021</span><p>All major functionality completed.</p></li>
+      <li class="fix"><span class="date">August 20<sup>th</sup>, 2021</span><p>Search feature built and general interface design completed.</p></li>
+      <li class="fix"><span class="date">August 17<sup>th</sup>, 2021</span><p>New Site!</p></li>
+    </ul>
+  </section>
+
+</form>
+
+<footer>
+  <h3 class="tcenter">Thank you for using my website!</h3>
+  <p class="xsmall red"><strong>1,989 nephalem and counting</strong></p>
+  <p class="xsmall"><a target="_blank" href="mailto:jeremytilden@gmail.com">Email Me</a> - <a href="https://www.diablo3gemcalculator.com">Diablo 3 Gem Calculator</a></p>
+  <p class="copyright">&copy; 2024. This website does not record any data. Images belong to Blizzard Entertainment, Inc.</p>
+</footer>
+
+</body>
+</html>
